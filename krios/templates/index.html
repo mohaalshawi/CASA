@@ -1,4 +1,158 @@
-hello world
-{% block content %}
-	
-{% endblock %}
+<!-- #4dbd99
+#1a1a1a -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Slider
+    ================================================== -->
+<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<script type="text/javascript">
+
+$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+
+  <script src="float-panel.js"></script>
+
+</script>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation
+    ==========================================-->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <img src="./img/logo.png" align="left" height="50px">
+      <a class="navbar-brand page-scroll">  Casa</a> 
+    </div>
+
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="" class="page-scroll">Home</a></li>
+        <li><a href="" class="page-scroll">Login</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 intro-text">
+            <h1>Humanty will extend!</h1>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- About Section -->
+<div id="about">
+  <div class="container text-center">
+    <div class="row">
+          <h2>Do you want to <b>Benefit</b> the human race?</h2>
+          <h3> <b style="color: #6aaf08"> 421</b> people are in , what are you waiting for </h3>
+          
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Services Section -->
+<div id="services">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1 section-title text-center">
+      <hr>
+      <p></p>
+    </div>
+    <div class="row text-center">
+        <i class="fas fa-chart-line fa-10x "></i>
+        <h2>Our Numbers</h2>
+        <br>
+      </div>
+    </div>
+    <br><br><br><br>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <i  class="fas fa-solar-panel fa-7x "></i>
+        <br><br>
+        <h2 >Solar Panel</h2>
+        <h2> <b style="color: #FFF"> 25</b> </h2>
+      </div>
+        <div class="col-md-4 text-center">
+        <i  class="fas fa-lightbulb fa-7x "></i>
+        <br><br>
+        <h2 >Light Bulbs</h2>
+        <h2> <b style="color: #FFF"> 374</b> </h2>
+      </div>
+      <div class="col-md-4 text-center ">
+        <img height="100px"  src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDI1NC44OTMgMjU0Ljg5MyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjU0Ljg5MyAyNTQuODkzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTIzLjg5NiwxMzUuODA3aDEwLjAyOWMwLDAsMS4yMTgtNS4yNTksMi43My0xMS43NDdjMS41MDUtNi40ODUsMTMuNDMtMTEuNzQ3LDI2LjYyNC0xMS43NDdoMTMxLjQyMiAgICBjMTMuMTk4LDAsMjQuNjMzLDUuMjYyLDI1LjU0MywxMS43NDdsMS42NDMsMTEuNzQ3aDkuMTFjMTMuMTk0LDAsMjMuODk2LTEwLjcwMSwyMy44OTYtMjMuODk1VjY3LjMwOSAgICBjMC0xMS4wMTctNy40OTUtMjAuMTk3LTE3LjYzNy0yMi45NjVjMC41NzQsMi4yNTcsMC45MSw0LjYwNCwwLjkxLDcuMDMxdjkuNTU4YzAsMTUuODE0LTEyLjg2MiwyOC42NzQtMjguNjc1LDI4LjY3NEg0NS40MDEgICAgYy0xNS44MTQsMC0yOC42NzQtMTIuODYtMjguNjc0LTI4LjY3NHYtOS41NThjMC0yLjQyNywwLjMzMy00Ljc3NCwwLjkwOC03LjAzMUM3LjQ5Myw0Ny4xMTEsMCw1Ni4yOTIsMCw2Ny4zMDl2NDQuNjAzICAgIEMwLDEyNS4xMSwxMC42OTksMTM1LjgwNywyMy44OTYsMTM1LjgwN3oiIGZpbGw9IiMxZjFmMWYiLz4KCQk8cGF0aCBkPSJNNDUuNDAxLDgwLjA1NGgxNjQuMDc2YzEwLjU0OCwwLDE5LjExNi04LjU3NCwxOS4xMTYtMTkuMTE3VjUxLjM4YzAtMi44NTQtMC42NjMtNS41MzUtMS43OTItNy45NjdIMjguMDc3ICAgIGMtMS4xMjUsMi40MzItMS43OTIsNS4xMTItMS43OTIsNy45Njd2OS41NThDMjYuMjg1LDcxLjQ4LDM0Ljg2Myw4MC4wNTQsNDUuNDAxLDgwLjA1NHogTTM1LjkxOCw1MS44NzZoMTgwLjQxICAgIGMxLjMyMSwwLDIuMzksMS4wNzEsMi4zOSwyLjM5cy0xLjA2OCwyLjM5LTIuMzksMi4zOUgzNS45MThjLTEuMzE4LDAtMi4zOS0xLjA3MS0yLjM5LTIuMzlTMzQuNTk1LDUxLjg3NiwzNS45MTgsNTEuODc2eiAgICAgTTM1LjkxOCw2Ni44MTJoMTgwLjQxYzEuMzIxLDAsMi4zOSwxLjA3MSwyLjM5LDIuMzg5YzAsMS4zMTktMS4wNjgsMi4zOS0yLjM5LDIuMzlIMzUuOTE4Yy0xLjMxOCwwLTIuMzktMS4wNzEtMi4zOS0yLjM5ICAgIEMzMy41MjgsNjcuODgyLDM0LjU5NSw2Ni44MTIsMzUuOTE4LDY2LjgxMnoiIGZpbGw9IiMxZjFmMWYiLz4KCQk8cGF0aCBkPSJNMjEyLjgxOCwxMjcuMDQ3Yy0wLjY5OS00LjgzNy0xMS45NjYtOC43Ni0yNS4xNjktOC43Nkg2OC45NzVjLTEzLjE5MywwLTI0LjYxMSwzLjkyMi0yNS40ODcsOC43NiAgICBjLTAuODc5LDQuODQtMS41OTEsOC43Ni0xLjU5MSw4Ljc2aDE3Mi4xOTFMMjEyLjgxOCwxMjcuMDQ3eiIgZmlsbD0iIzFmMWYxZiIvPgoJCTxwYXRoIGQ9Ik01Ny44NzksMjEwLjMxMmMwLjkwMywwLjc4NCwyLjAxNiwxLjE2NywzLjEyNSwxLjE2N2MxLjMzOSwwLDIuNjcyLTAuNTYxLDMuNjE1LTEuNjQ3ICAgIGMwLjc0LTAuODU5LDE3Ljk3OC0yMS4xMTQsNC45MDctMzcuNTYxYy03LjI1LTkuMTI5LTEuODkzLTE0LjQzMi0wLjcyNi0xNS40MjFjMi4wMjUtMS42NTEsMi4zNTQtNC42MywwLjcyMS02LjY4MyAgICBjLTEuNjQ1LTIuMDYzLTQuNjUxLTIuNDA0LTYuNzE2LTAuNzYxYy01LjAwNywzLjk5LTExLjYxNiwxNS4xNDUtMC43NjMsMjguODFjOC4xMzcsMTAuMjM5LTQuNTI3LDI1LjIxMi00LjY1MSwyNS4zNTYgICAgQzU1LjY3MSwyMDUuNTYyLDU1Ljg4NiwyMDguNTgxLDU3Ljg3OSwyMTAuMzEyeiIgZmlsbD0iIzFmMWYxZiIvPgoJCTxwYXRoIGQ9Ik05OS42OTYsMjEwLjMxMmMwLjkwMywwLjc4NCwyLjAxNiwxLjE2NywzLjEyNSwxLjE2N2MxLjM0LDAsMi42NzItMC41NjEsMy42MTUtMS42NDcgICAgYzAuNzQtMC44NTksMTcuOTc4LTIxLjExNCw0LjkwOC0zNy41NjFjLTcuMjUtOS4xMjktMS44OTMtMTQuNDMyLTAuNzI2LTE1LjQyMWMyLjAyNi0xLjY1MSwyLjM1NS00LjYzLDAuNzIxLTYuNjgzICAgIGMtMS42NDUtMi4wNjMtNC42NS0yLjQwNC02LjcxNi0wLjc2MWMtNS4wMDgsMy45OS0xMS42MTYsMTUuMTQ1LTAuNzYzLDI4LjgxYzguMTM3LDEwLjIzOS00LjUyNywyNS4yMTItNC42NTEsMjUuMzU2ICAgIEM5Ny40ODgsMjA1LjU2Miw5Ny43MDMsMjA4LjU4MSw5OS42OTYsMjEwLjMxMnoiIGZpbGw9IiMxZjFmMWYiLz4KCQk8cGF0aCBkPSJNMTQxLjUxNiwyMTAuMzEyYzAuOSwwLjc4NCwyLjAxNiwxLjE2NywzLjEyMiwxLjE2N2MxLjMzOSwwLDIuNjc0LTAuNTYxLDMuNjE3LTEuNjQ3ICAgIGMwLjczNy0wLjg1OSwxNy45NzgtMjEuMTE0LDQuOTA1LTM3LjU2MWMtNy4yNDgtOS4xMjktMS44OTEtMTQuNDMyLTAuNzI0LTE1LjQyMWMyLjAyNS0xLjY1MSwyLjM1Mi00LjYzLDAuNzE5LTYuNjgzICAgIGMtMS42NDQtMi4wNjMtNC42NDgtMi40MDQtNi43MTYtMC43NjFjLTUuMDA4LDMuOTktMTEuNjE3LDE1LjE0NS0wLjc2MSwyOC44MWM4LjEzNCwxMC4yMzktNC41MjcsMjUuMjEyLTQuNjUzLDI1LjM1NiAgICBDMTM5LjMwMywyMDUuNTYyLDEzOS41MTgsMjA4LjU4MSwxNDEuNTE2LDIxMC4zMTJ6IiBmaWxsPSIjMWYxZjFmIi8+CgkJPHBhdGggZD0iTTE4My4zMzIsMjEwLjMxMmMwLjkwMSwwLjc4NCwyLjAxNywxLjE2NywzLjEyMywxLjE2N2MxLjMzOSwwLDIuNjc0LTAuNTYxLDMuNjE2LTEuNjQ3ICAgIGMwLjczNy0wLjg1OSwxNy45NzgtMjEuMTE0LDQuOTA1LTM3LjU2MWMtNy4yNDgtOS4xMjktMS44OS0xNC40MzItMC43MjQtMTUuNDIxYzIuMDI2LTEuNjUxLDIuMzUzLTQuNjMsMC43MTktNi42ODMgICAgYy0xLjY0My0yLjA2My00LjY0OC0yLjQwNC02LjcxNi0wLjc2MWMtNS4wMDgsMy45OS0xMS42MTYsMTUuMTQ1LTAuNzYxLDI4LjgxYzguMTM1LDEwLjIzOS00LjUyNiwyNS4yMTItNC42NTMsMjUuMzU2ICAgIEMxODEuMTIsMjA1LjU2MiwxODEuMzM1LDIwOC41ODEsMTgzLjMzMiwyMTAuMzEyeiIgZmlsbD0iIzFmMWYxZiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+        <br><br>
+        <h2 >Air Condetion</h2>
+        <h2> <b style="color: #FFF"> 197</b> </h2>
+      </div>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/owl.carousel.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+</div>
+</div>
+</div>
+</body>
+</html>
